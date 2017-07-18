@@ -1,0 +1,97 @@
+@import '../styles/_variables';
+
+.home-page  {
+    .devices-status {
+        padding-left: 15px;
+        padding-right: 15px;
+        color: white;
+        font-weight: bold;
+        line-height: 40px;
+        font-size: 13px;
+        white-space: nowrap;
+        &.offline {
+            background-color: $coralTwo;
+        }
+        &.online {
+            background-color: $topaz;
+        }
+        span {
+            display: inline-block;
+            width: 50%;
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+    .separator {
+        color: $greyish;
+        font-size: 13px;
+        padding: 5px 0 5px 10px;
+        font-weight: 600;
+        line-height: 18px;
+    }
+    .home-messages {
+        border-top: 1px solid $paleGreyTwo;
+        border-bottom: 1px solid $paleGreyTwo;
+        cursor: pointer;
+        box-sizing: border-box;
+        .mes-settings {
+            border-top: 1px solid $paleGreyTwo;
+            padding: 10px 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+            overflow: hidden;
+            div{
+                float: left;
+                display: inline-block;
+                text-align: left;
+                line-height: 18px;
+                .fa {
+                    font-size:18px;
+                    line-height: 18px;
+                    vertical-align: middle;
+                }
+                .settings-label {
+                    color: $brownishGrey;
+                    font-size: 13px;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                }
+                &:last-child {
+                    float: right;
+                }
+            }
+        }
+        .mes-info {
+             padding: 5px 10px;
+            .mes-title {
+                color: $greyishBrownTwo;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+            }
+            .mes-device-id {
+                color: $greyishBrownTwo;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 17px;
+            }
+            .mes-desciption {
+                color: $brownishGrey;
+                font-size: 12px;
+                line-height: 17px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .mes-date {
+                float: right;
+                font-size: 13px;
+                font-weight: bold;
+                line-height: 18px;
+                color: $greyishBrownTwo;
+            }
+        }
+    }
+}

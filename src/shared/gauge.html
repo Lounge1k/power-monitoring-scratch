@@ -1,0 +1,23 @@
+<div>Current Value {{gauge}}</div>
+<div style="position:relative;display: inline-block">
+    <jqxGauge
+            #gaugeReference
+            (onValueChanging)="gaugeOnValueChanging($event)"
+            [ranges]='ranges'
+            [pointer]='pointer'
+            [labels]='labels'
+            [showRanges]='true'
+            [ticksMinor]='ticksMinor'
+            [ticksMajor]='ticksMajor'
+            [border]='border'
+            [min]="190"
+            [max]="260"
+            [colorScheme]='"scheme01"'
+            [animationDuration]='1200'
+            [endAngle]="350"
+            [startAngle]="57"
+            [value]="gauge"
+    >
+    </jqxGauge>
+    <div id="gaugeValue" class="gauge-wrapper"></div>
+</div>

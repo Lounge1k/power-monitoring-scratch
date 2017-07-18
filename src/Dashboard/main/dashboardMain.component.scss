@@ -1,0 +1,92 @@
+@import '../styles/_variables';
+.dashboard-page {
+    .rooms-filter {
+        padding:20px 10px;
+        .filter-button {
+            float: right;
+            padding-left: 30px;
+            i {
+                float: right;
+                cursor: pointer;
+                padding-right: 10px;
+            }
+        }
+        .filter-input {
+            position: relative;
+            display: inline-block;
+            input {
+                border:0;
+                border-bottom: 1px solid $whiteThree;
+            }
+            .fa {
+                position: absolute;
+                top:0;
+                bottom:0;
+                right:0;
+            }
+        }
+    }
+    .room-dropdown {
+        border-top: 1px solid $paleGreyTwo;
+        .room {
+            padding: 15px 10px;
+            overflow: hidden;
+            .room-name {
+                float: left;
+                color: $greyishBrownTwo;
+                line-height: 18px;
+                font-size: 15px;
+            }
+            .room-trigger {
+                color: $tealishTwo;
+                float: right;
+                font-size: 13px;
+                line-height: 18px;
+                font-weight: 600;
+                .fa {
+                    font-size: 15px;
+                }
+            }
+        }
+        .device {
+            padding: 15px 10px;
+            border-top: 1px solid $paleGreyTwo;
+                &-status {
+                    height: 20px;
+                    width: 20px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    border-radius: 10px;
+                    &.online {
+                        background-color: $greenblue;
+                    }
+                    &.offline {
+                        background-color: $coral;
+                    }
+                }
+                &-info {
+                    display: inline-block;
+                    vertical-align: middle;
+                    &-id {
+                        font-weight: bold;
+                        font-size: 15px;
+                        line-height: 18px;
+                    }
+                    &-status {
+                        font-size: 13px;
+                        color: $greyishTwo;
+                        font-weight: normal;
+                        line-height: 18px;
+                    }
+                }
+                .fa {
+                    line-height: 36px;
+                    color: $coolGreyTwo;
+                    font-size: 14px;
+                }
+            }
+        &:last-child {
+            border-bottom: 1px solid $paleGreyTwo;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+<div class="home-page">
+    <div class="devices-status online">
+        <span>Devices online:</span>
+        <span>{{deviceStatus.online}}</span>
+    </div>
+    <div class="devices-status offline">
+        <span>Devices offline:</span>
+        <span>{{deviceStatus.offline}}</span>
+    </div>
+    <div *ngIf='todayMes.length > 0'>
+        <div class='separator'>Today</div>
+        <div class='home-messages' *ngFor='let mes of todayMes'>
+            <div class="mes-info" (click)='mes.showSettings = !mes.showSettings'>
+                <div class='mes-date'>{{mes.date | amDateFormat:'HH:mm'}}</div>
+                <div class='mes-title'>{{mes.title}}</div>
+                <div class='mes-device-id'> >> Smartmeter ID:{{mes.id}}</div>
+                <div class='mes-desciption'>{{mes.descripttion}}</div>
+            </div>
+            <div class='mes-settings' [hidden]='!mes.showSettings'>
+                <div>
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <span class='settings-label'>device managment</span>
+                </div>
+                <div>
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <span class='settings-label'>see logs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf='yestMes.length > 0'>
+        <div class='separator'>Yesterday</div>
+        <div class='home-messages' *ngFor='let mes of yestMes'>
+            <div class="mes-info" (click)='mes.showSettings = !mes.showSettings' >
+                <div class='mes-date'>{{mes.date | amDateFormat:'MMM D'}}</div>
+                <div class='mes-title'>{{mes.title}}</div>
+                <div class='mes-device-id'> >> Smartmeter ID:{{mes.id}}</div>
+                <div class='mes-desciption'>{{mes.descripttion}}</div>
+            </div>
+            <div class='mes-settings' [hidden]='!mes.showSettings'>
+                <div>
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <span class='settings-label'>device managment</span>
+                </div>
+                <div>
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <span class='settings-label'>see logs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf='olderMes.length > 0'>
+        <div class='separator'>Older</div>
+        <div class='home-messages' *ngFor='let mes of olderMes'>
+            <div class="mes-info" (click)='mes.showSettings = !mes.showSettings'>
+                <div class='mes-date'>{{mes.date | amDateFormat:'MMM D'}}</div>
+                <div class='mes-title'>{{mes.title}}</div>
+                <div class='mes-device-id'> >> Smartmeter ID:{{mes.id}}</div>
+                <div class='mes-desciption'>{{mes.descripttion}}</div>
+            </div>
+            <div class='mes-settings' [hidden]='!mes.showSettings'>
+                <div>
+                    <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <span class='settings-label'>device managment</span>
+                </div>
+                <div>
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <span class='settings-label'>see logs</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

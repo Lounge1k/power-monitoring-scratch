@@ -1,0 +1,54 @@
+[
+    {
+        "room": "Machine Room",
+        "devices": [
+            {
+                "status": "online",
+                "id": "023"
+            },
+            {
+                "status": "offline",
+                "id": "023"
+            }
+        ]
+    },
+    {
+        "room": "Maintenance Room",
+        "devices": [
+            {
+                "status": "online",
+                "id": "023"
+            },
+            {
+                "status": "offline",
+                "id": "023"
+            }
+        ]
+    },
+    {
+        "room": "Loading Docks",
+        "devices": [
+            {
+                "status": "online",
+                "id": "023"
+            },
+            {
+                "status": "offline",
+                "id": "023"
+            }
+        ]
+    },
+    {
+        "room": "Machine Room",
+        "devices": [
+            {
+                "status": "online",
+                "id": "023"
+            },
+            {
+                "status": "offline",
+                "id": "023"
+            }
+        ]
+    }
+]

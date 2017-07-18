@@ -1,0 +1,51 @@
+.form-group {
+  position: relative;
+  label {
+    display: block;
+    color: $brownishGrey;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+    margin-bottom: 2px;
+  }
+  .form-control {
+    border-radius: 8px;
+    padding-left: 7px;
+    padding-right: 7px;
+    height: 40px;
+    font-size: 14px;
+    color: $brownishGrey;
+    background-color: #fff;
+    border: 1px solid $paleGrey;
+    &:hover,&:focus,&:active {
+      border: 1px solid $tiffanyBlue;
+    }
+    &:disabled {
+      background-color: $white;
+    }
+  }
+  .error-message {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $coral;
+  }
+  &.error {
+    label{
+      color: $coral;
+    }
+    .form-control {
+      border-color: $coral;
+      &:hover {
+        border-color: $coral;
+      }
+    }
+    .error-message {
+      display: block;
+    }
+  }
+}

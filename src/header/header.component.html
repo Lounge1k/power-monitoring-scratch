@@ -1,0 +1,31 @@
+<header>
+    <div class="flex-container">
+        <i class="fa fa-bars" aria-hidden="true" (click)='showMenu = !showMenu'></i>
+    </div>
+    <div class="flex-container">
+        <i class="fa fa-bell-o" aria-hidden="true"></i>
+        <span class="notifications-counter">4</span>
+        <span class="user-icon"></span>
+    </div>
+    <div class="overlay" [hidden]='!showMenu'>
+        <nav class='main-menu'>
+            <div class='menu-link uppercase' routerLink='/home'>HOME</div>
+            <div class='menu-link uppercase' routerLink='/dashboard'>Dashboard</div>
+            <div class='menu-link uppercase' routerLink='/rules'>RULES</div>
+            <div class='menu-link sub-dropdown uppercase' (click)='showSubMenu = !showSubMenu'>
+                <span>DEVICE MANAGMENT</span>
+                <i class="fa fa-angle-down" [ngClass]="!showSubMenu ? '' : 'fa-rotate-180'"></i>
+                <nav [hidden]='!showSubMenu'>
+                    <div class='menu-link'>Device Info</div>
+                    <div class='menu-link'>Add New</div>
+                    <div class='menu-link'><span>Logs</span> <span class="notifications-counter">4</span></div>
+                    <div class='menu-link'><span>Update</span> <span class='update-available'></span></div>
+                </nav>
+            </div>
+            <div class="settings">
+                <div class='menu-link' routerLink='/settings'>Settings</div>
+                <div class='menu-link' routerLink='/logout'>Log out</div>
+            </div>
+        </nav>
+    </div>
+</header>

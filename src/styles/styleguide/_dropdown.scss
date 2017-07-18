@@ -1,0 +1,13 @@
+.dropdown {
+  display: inline-block;
+  &-button {
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid $greenblue;
+    color: $greenblue;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    padding: 5px 35px 5px 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-content: space-between;
+  .flex-block{
+    display: inline-block;
+  }
+}
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 60px;
+}

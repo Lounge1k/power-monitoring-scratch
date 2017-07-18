@@ -1,0 +1,70 @@
+.dashboard-page .rooms-filter {
+  padding: 20px 10px; }
+  .dashboard-page .rooms-filter .filter-button {
+    float: right;
+    padding-left: 30px; }
+    .dashboard-page .rooms-filter .filter-button i {
+      float: right;
+      cursor: pointer;
+      padding-right: 10px; }
+  .dashboard-page .rooms-filter .filter-input {
+    position: relative;
+    display: inline-block; }
+    .dashboard-page .rooms-filter .filter-input input {
+      border: 0;
+      border-bottom: 1px solid #dbdbdb; }
+    .dashboard-page .rooms-filter .filter-input .fa {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0; }
+
+.dashboard-page .room-dropdown {
+  border-top: 1px solid #f3f5f8; }
+  .dashboard-page .room-dropdown .room {
+    padding: 15px 10px;
+    overflow: hidden; }
+    .dashboard-page .room-dropdown .room .room-name {
+      float: left;
+      color: #484848;
+      line-height: 18px;
+      font-size: 15px; }
+    .dashboard-page .room-dropdown .room .room-trigger {
+      color: #26c6da;
+      float: right;
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 600; }
+      .dashboard-page .room-dropdown .room .room-trigger .fa {
+        font-size: 15px; }
+  .dashboard-page .room-dropdown .device {
+    padding: 15px 10px;
+    border-top: 1px solid #f3f5f8; }
+    .dashboard-page .room-dropdown .device-status {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      border-radius: 10px; }
+      .dashboard-page .room-dropdown .device-status.online {
+        background-color: #1bbc9b; }
+      .dashboard-page .room-dropdown .device-status.offline {
+        background-color: #ef5350; }
+    .dashboard-page .room-dropdown .device-info {
+      display: inline-block;
+      vertical-align: middle; }
+      .dashboard-page .room-dropdown .device-info-id {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 18px; }
+      .dashboard-page .room-dropdown .device-info-status {
+        font-size: 13px;
+        color: #a4a4a4;
+        font-weight: normal;
+        line-height: 18px; }
+    .dashboard-page .room-dropdown .device .fa {
+      line-height: 36px;
+      color: #9b9da5;
+      font-size: 14px; }
+  .dashboard-page .room-dropdown:last-child {
+    border-bottom: 1px solid #f3f5f8; }

@@ -1,0 +1,78 @@
+.home-page .devices-status {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+  line-height: 40px;
+  font-size: 13px;
+  white-space: nowrap; }
+  .home-page .devices-status.offline {
+    background-color: #f05551; }
+  .home-page .devices-status.online {
+    background-color: #12bc9a; }
+  .home-page .devices-status span {
+    display: inline-block;
+    width: 50%; }
+    .home-page .devices-status span:last-child {
+      text-align: right; }
+
+.home-page .separator {
+  color: #b6b6b6;
+  font-size: 13px;
+  padding: 5px 0 5px 10px;
+  font-weight: 600;
+  line-height: 18px; }
+
+.home-page .home-messages {
+  border-top: 1px solid #f3f5f8;
+  border-bottom: 1px solid #f3f5f8;
+  cursor: pointer;
+  box-sizing: border-box; }
+  .home-page .home-messages .mes-settings {
+    border-top: 1px solid #f3f5f8;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    overflow: hidden; }
+    .home-page .home-messages .mes-settings div {
+      float: left;
+      display: inline-block;
+      text-align: left;
+      line-height: 18px; }
+      .home-page .home-messages .mes-settings div .fa {
+        font-size: 18px;
+        line-height: 18px;
+        vertical-align: middle; }
+      .home-page .home-messages .mes-settings div .settings-label {
+        color: #666666;
+        font-size: 13px;
+        line-height: 17px;
+        text-transform: uppercase;
+        vertical-align: middle; }
+      .home-page .home-messages .mes-settings div:last-child {
+        float: right; }
+  .home-page .home-messages .mes-info {
+    padding: 5px 10px; }
+    .home-page .home-messages .mes-info .mes-title {
+      color: #484848;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 18px; }
+    .home-page .home-messages .mes-info .mes-device-id {
+      color: #484848;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 17px; }
+    .home-page .home-messages .mes-info .mes-desciption {
+      color: #666666;
+      font-size: 12px;
+      line-height: 17px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .home-page .home-messages .mes-info .mes-date {
+      float: right;
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 18px;
+      color: #484848; }

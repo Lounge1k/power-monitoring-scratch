@@ -1,0 +1,31 @@
+<div class="dashboard-page">
+    <div class="rooms-filter">
+        <div class='filter-button'>
+            <i class="fa fa-filter" [routerLink]="['filter']" aria-hidden="true"></i>
+        </div>
+        <div class='filter-input'>
+            <input type="text">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </div>
+    <div class='room-dropdown' *ngFor='let room of rooms '>
+        <div class='room' (click)='room.drop = !room.drop'>
+            <span class='room-name'>{{room.room}}</span>
+            <span class='room-trigger'>See <i class='fa fa-angle-down' ></i></span>
+        </div>
+        <div class='device' [hidden]='!room.drop' *ngFor='let device of room.devices'>
+            <div class="flex-container">
+                <div class="flex-block">
+                    <span class='device-status' [ngClass]="device.status === 'online' ? 'online' : 'offline'"></span>
+                    <div class='device-info'>
+                        <div class='device-info-id'>ID : {{device.id}}</div>
+                        <div class='device-info-status'>{{device.status}}</div>
+                    </div>
+                </div>
+                <div class="flex-block">
+                    <i class="fa fa-arrow fa-angle-down fa-rotate-270"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

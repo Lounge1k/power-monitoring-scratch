@@ -1,0 +1,96 @@
+@import '../styles/_variables';
+
+header{
+  overflow: hidden;
+  height: 60px;
+  background-color: $charcoalGrey;
+  padding: 8px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .flex-container {
+    display: inline-block;
+  }
+  i,span{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .fa-bars {
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  .fa-bell-o {
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .notifications-counter {
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .update-available {
+    background-color: $mediumPink;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+  .user-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 20px;
+    background-color: white;
+  }
+.main-menu {
+    position: fixed;
+    padding-left: 15px;
+    padding-top: 10px;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    background-color: $slateGreyTwo;
+    .menu-link {
+      color: $steel;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: color 0.3s;
+      &.uppercase {
+        text-transform: uppercase;
+      }
+      &:hover {
+        color: white;
+      }
+    }
+    .settings {
+      margin-top: 50px;
+    }
+    .sub-dropdown {
+      nav{
+        margin-top: 20px;
+      }
+      .menu-link{
+        border-left: 1px solid $steel;
+        padding-left: 10px;
+        text-transform: none;
+        span{
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+        }  
+        &:hover {
+          border-color: white;
+        }
+      }   
+    }
+    
+  }
+}

@@ -1,0 +1,74 @@
+header {
+  overflow: hidden;
+  height: 60px;
+  background-color: #3b3f51;
+  padding: 8px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  header .flex-container {
+    display: inline-block; }
+  header i, header span {
+    display: inline-block;
+    vertical-align: middle; }
+  header .fa-bars {
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    cursor: pointer; }
+  header .fa-bell-o {
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    margin-right: 10px;
+    cursor: pointer; }
+  header .notifications-counter {
+    margin-right: 20px;
+    cursor: pointer; }
+  header .update-available {
+    background-color: #ed6b75;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px; }
+  header .user-icon {
+    height: 45px;
+    width: 45px;
+    border-radius: 20px;
+    background-color: white; }
+  header .main-menu {
+    position: fixed;
+    padding-left: 15px;
+    padding-top: 10px;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    background-color: #54596d; }
+    header .main-menu .menu-link {
+      color: #898b94;
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: color 0.3s; }
+      header .main-menu .menu-link.uppercase {
+        text-transform: uppercase; }
+      header .main-menu .menu-link:hover {
+        color: white; }
+    header .main-menu .settings {
+      margin-top: 50px; }
+    header .main-menu .sub-dropdown nav {
+      margin-top: 20px; }
+    header .main-menu .sub-dropdown .menu-link {
+      border-left: 1px solid #898b94;
+      padding-left: 10px;
+      text-transform: none; }
+      header .main-menu .sub-dropdown .menu-link span {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px; }
+      header .main-menu .sub-dropdown .menu-link:hover {
+        border-color: white; }
